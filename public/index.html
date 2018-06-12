@@ -358,7 +358,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
     <script>
-        // Initialize Firebase var config={apiKey: "AIzaSyDxD3lmekpG8o2kCS6ocldOB4KDMgX3SpE", authDomain: "rigelspeedskating.firebaseapp.com", databaseURL: "https://rigelspeedskating.firebaseio.com", projectId: "rigelspeedskating", storageBucket: "rigelspeedskating.appspot.com", messagingSenderId: "41653051787"}; firebase.initializeApp(config);
+     var config={apiKey: "AIzaSyDxD3lmekpG8o2kCS6ocldOB4KDMgX3SpE", authDomain: "rigelspeedskating.firebaseapp.com", databaseURL: "https://rigelspeedskating.firebaseio.com", projectId: "rigelspeedskating", storageBucket: "rigelspeedskating.appspot.com", messagingSenderId: "41653051787"}; firebase.initializeApp(config);
     </script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -380,34 +380,35 @@
             })
         })
     </script>
-    <script type="text/javascript">
-        function initMap() {
-            var loc = {
-                lat: 13.068390,
-                lng: 80.215273
-            };
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
-                center: loc
-            });
-            varloc2 = {
-                lat: 13.069644,
-                lng: 80.168334
-            };
-            console.log(google.maps);
-            var marker = new google.maps.Marker({
-                position: loc,
-                label: "Rigelspeed skating academy",
-                map: map
-            });
-            var marker2 = new google.maps.Marker({
-                position: loc2,
-                label: "Rigel speed skating academy",
-                map: map
-            })
-        }
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVkuU76RXnajnHurEgXhaTQrHweXjSSvs&callback=initMap"></script>
+    <script type= "text/javascript" >
+                function initMap() {
+                    var loc = {
+                        lat: 13.068390,
+                        lng: 80.215273
+                    };
+                    var map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 13,
+                        center: loc
+                    });
+                    var loc2 = {
+                        lat: 13.069644,
+                        lng: 80.168334
+                    };
+                    console.log(google.maps);
+                    var marker = new google.maps.Marker({
+                        position: loc,
+                        label: "Rigelspeed skating academy",
+                        map: map
+                    });
+                    var marker2 = new google.maps.Marker({
+                        position: loc2,
+                        label: "Rigel speed skating academy",
+                        map: map
+                    })
+                }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVkuU76RXnajnHurEgXhaTQrHweXjSSvs&callback=initMap">
     </script>
 </body>
 

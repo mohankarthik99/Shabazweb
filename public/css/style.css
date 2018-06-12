@@ -7,6 +7,9 @@
 	z-index: 100;
 	background: linear-gradient(#367790, #469e8e)
 }
+.team{
+	border:2px solid red;
+}
 
 #loader {
 	display: block;
@@ -231,7 +234,7 @@ h1 {
 	clear: both
 }
 
-
+}
 
 .figure {
 	margin: 0
@@ -1182,7 +1185,7 @@ img {
 }
 
 .down {
-	margin-top: none
+	margin-top: 0;
 }
 
 @media(min-width:768px) {
